@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Altschool README Generator",
+  "description": "A Chrome extension that scrapes Altschool LMS pages and generates a README.md automatically.",
+  "version": "1.0.0",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "icons8-documents-30.png"
+    }
+  },
+  "icons": {
+    "16": "icons8-documents-30.png"
+  }
+}
