@@ -1,6 +1,5 @@
 import React from "react";
 import { FaWandMagicSparkles } from "react-icons/fa6";
-// import { CiCircleQuestion } from "react-icons/ci";
 import { GoQuestion } from "react-icons/go";
 
 const CallToAction = () => {
