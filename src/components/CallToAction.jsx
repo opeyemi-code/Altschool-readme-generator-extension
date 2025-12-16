@@ -17,7 +17,7 @@ const CallToAction = () => {
       <button
         onClick={handleClick}
         type="button"
-        className="bg-linear-[-90deg,#6366F1_0%,#9333EA_100%] px-6 py-5 rounded-lg text-white text-[1rem] font-semibold flex items-center h-20 gap-5"
+        className="bg-linear-[-90deg,#6366F1_0%,#9333EA_100%] px-6 py-5 rounded-lg text-white text-[1rem] font-semibold flex items-center h-20 gap-5 cursor-pointer hover:bg-linear-[-90deg,#6366F1_10%,#9333EA_80%]"
       >
         <GoQuestion className="text-white" />
         Scrape Assignment & <br /> Generate

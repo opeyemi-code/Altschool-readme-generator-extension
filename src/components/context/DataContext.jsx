@@ -47,19 +47,19 @@ export const DataProvider = ({ children }) => {
       const tab = tabs[0];
       console.log(tab);
 
-      // 🚫 No tab or invalid URL
+      // No tab or invalid URL
       if (!tab || !tab.url) {
         showError();
         return;
       }
 
-      // 🚫 Not AltSchool LMS
+      // Not AltSchool LMS
       if (!tab.url.startsWith("https://learn.altschoolafrica.com")) {
         showError();
         return;
       }
 
-      // ✅ Valid website → request scraping
+      // Valid website → request scraping
       setHomeScreen(false);
       setProcessingScreen(true);
       setErrorScreen(false);

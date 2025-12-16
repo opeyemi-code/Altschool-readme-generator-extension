@@ -23,7 +23,7 @@ const ErrorScreen = () => {
           This page doesn't contain the expected content structure for README
           generation.
         </p>
-        <button className="mt-6 flex gap-2 items-center justify-center bg-linear-[90deg,#3B82F6_0%,#9333EA_100%] text-white font-medium text-[1rem] w-full py-4 rounded-lg">
+        <button className="mt-6 flex gap-2 items-center justify-center bg-linear-[90deg,#3B82F6_0%,#9333EA_100%] text-white font-medium text-[1rem] w-full py-4 rounded-lg cursor-pointer hover:bg-linear-[90deg,#3B82F6_10%,#9333EA_80%]">
           <IoReload />
           Retry Scraping
         </button>
