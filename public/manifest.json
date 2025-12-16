@@ -3,13 +3,25 @@
   "name": "Altschool README Generator",
   "description": "A Chrome extension that scrapes Altschool LMS pages and generates a README.md automatically.",
   "version": "1.0.0",
+  "permissions": ["activeTab", "storage"],
   "action": {
     "default_popup": "index.html",
     "default_icon": {
       "16": "icons8-documents-30.png"
     }
   },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
   "icons": {
     "16": "icons8-documents-30.png"
-  }
+  },
+  "host_permissions": ["https://learn.altschoolafrica.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://learn.altschoolafrica.com/*"],
+      "js": ["contentScript.js"]
+    }
+  ]
 }
